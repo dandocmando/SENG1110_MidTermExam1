@@ -33,8 +33,10 @@ public class QuestionEleven {
         }
 
         double cost = init_cost+del;  // adds the pizza cost and delivery cost(if it exists)
+        System.out.println(cost);
         if(cost > 50){ // gives a discount of 5% if pizza purchase is over $50
-            cost/=1.05;
+            cost*=.95; // Didn't use the right percentage off formula, used cost/=1.05
+            System.out.println(cost);
         }
         System.out.println("Total cost: $"+calcRoundedCost(cost));
 
